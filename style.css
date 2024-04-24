@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.badge {
+  position: absolute;
+  top: 30px; 
+  left: 30px;
+  background-color: rgb(255, 255, 255); 
+  color: rgb(3, 2, 2); 
+  padding: 5px 10px; 
+  border-radius: 5px; 
+  font-size: 12px; 
+  font-style: bold;
+}
+
+#heading {
+  font-family: bold; 
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-size: 50px;
+}
+
+
+
+.categories {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; 
+  
+}
+
+.categories button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #939393;
+  color: #faf6f6;
+  border: none;
+  flex: 1; 
+  max-width: 250px; 
+}
+
+.categories button.active {
+  background-color: #0c0c0c; 
+  color: white; 
+}
+
+#productsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 15vh;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+@media only screen and ( max-width: 768px ){
+  .product{
+    margin-bottom: 20vh;
+  }
+}
+
+@media only screen and ( min-width: 768px ) and (max-width : 1024px){
+  .product{
+    margin-bottom: 20vh;
+  }
+}
+
+
+.product p {
+  display: inline-block; 
+  margin: 0 10% 0 0;
+}
+
+
+.product img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 5px;
+}
+
+.title-and-vendor {
+  display: flex; 
+  align-items: center; 
+}
+
+.title-and-vendor h3 {
+  font-weight: bold;
+  margin-right: 10px; 
+}
+
+.vendor {
+  list-style: disc; 
+  padding: 10px; 
+  margin: 10px; 
+}
+
+.title {
+  margin-top: 5px;
+  font-size: 15px;
+  width: 180px; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20.85px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.product .price {
+  color: #333; 
+}
+
+.product .compare-price {
+  color: #888; 
+  text-decoration: line-through;
+}
+
+.product .discount {
+  display: inline-block;
+  color: rgb(247, 5, 5); 
+  margin-left: 10px; 
+}
+
+#addToCartBtn {
+  background-color: black;
+  color: white; 
+  margin-top: 10px;
+  width: 100%;
+  height: 10%;
+  border-radius: 5px;
+}
